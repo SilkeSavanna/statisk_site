@@ -1,0 +1,71 @@
+.grid_col1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 10%;
+}
+
+.contact {
+  margin-right: 20%;
+}
+
+.bestil {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.bestil:hover {
+  background-color: grey;
+  transition: 0.3s;
+  color: black;
+}
+
+.produkt {
+  margin-top: 5%;
+}
+
+hr {
+  margin-top: 5%;
+}
+
+.produkt {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.ekstra-info {
+  display: none;
+  padding-top: 10px;
+}
+
+.produkt.open .ekstra-info {
+  display: block;
+}
+
+.produkt.open .toggle-btn::after {
+  content: "-";
+}
+
+.toggle-btn::after {
+  content: "+";
+}
+
+p {
+  font-size: 20px;
+}
+
+img {
+  width: 70%;
+  border: solid;
+}
