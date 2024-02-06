@@ -10,19 +10,21 @@
 
 <body>
     <header>
+        <a href="index.html">
+            <img class="logo" src="img/Artboard 1.svg" alt="logo">
+        </a>
         <nav>
-            <a href="index.html">FORSIDE</a>
             <a href="produktliste.html">TØJ</a>
             <a href="produktliste.html">ACCESSORIES</a>
             <a href="produktliste.html">SKO</a>
             <a href="produktliste.html">TRÆNINGSTØJ</a>
-            <a href="produktliste.html">VINTER</a>
+
         </nav>
     </header>
 
-    <h1>PRODUKTER</h1>
+    <h1 class="produkter_h1">PRODUKTER</h1>
     <section>
-        <h2>The Products</h2>
+
         <div class="produkt_container"></div>
     </section>
     <script src="javascript.js"></script>
@@ -33,19 +35,20 @@
 
 <template class="produkt_template">
     <article class="produkt_article">
-        <a href="produkt.html">
-            <div class="beer_abv_info">
-                <p class="beer_abv">abv:<span class="beer_abv_data"> 5.5%</span></p>
-                <p class="beer_strong hide"> strong</p>
-            </div>
-            <div class="produkt_image_container">
-                <img class="produkt_image" src="img/pige.jpeg" alt="">
-            </div>
-            <h3 class="produkt_name">Gooodbeer</h3>
-            <p class="produkt_tagline">Drink good beer</p>
-            <p class="produkt_price">55kr</p>
-            <button><a class="produkt_a" href="produkt.html">KØB NU</a></button>
-        </a>
+
+        <div class="produkt_info">
+            <!-- <p class="produkt_discount hide">Discount:<span class="produkt_discount_data"> 20</span>%</p> -->
+            <p class="produkt_soldout hide">SOLDOUT</p>
+        </div>
+        <div class="produkt_image_container">
+            <img class="produkt_image" src="img/pige.jpeg" alt="">
+        </div>
+        <h3 class="produkt_name">Gooodbeer</h3>
+        <p class="produkt_tagline">Drink good beer</p>
+        <p class="produkt_price">55kr</p>
+        <p class="produkt_discount hide">Discount: <span class="produkt_discount_data"> 20</span>%</p>
+        <button><a class="produkt_a">KØB NU</a></button>
+        <a class="produkt_link"></a>
     </article>
 
 </template>
