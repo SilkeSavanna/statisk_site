@@ -5,49 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="kategori.css">
+    <link rel="stylesheet" href="layout.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <a class="nav_a" href="kategori.html">Kategori</a>
+            <a href="index.html">FORSIDE</a>
+            <a href="produktliste.html">TØJ</a>
+            <a href="produktliste.html">ACCESSORIES</a>
+            <a href="produktliste.html">SKO</a>
+            <a href="produktliste.html">TRÆNINGSTØJ</a>
+            <a href="produktliste.html">VINTER</a>
         </nav>
     </header>
-    <main>
 
-        <h1>PRODUKTER</h1>
-        <section class="product-listing">
-            <article class="product">
-                <img src="img/buksee.webp" alt="Product 1">
-                <h2>NAVY TIGHTS, DAME</h2>
-                <p>399,95 kr.</p>
-                <button><a class="produkt_a" href="produkt.html">KØB NU</a></button>
-            </article>
-
-            <article class="product">
-                <img src="img/bold.jpeg" alt="Product 1">
-                <h2>BOLD, UNISEX</h2>
-                <p>600,00 kr.</p>
-                <button><a class="produkt_a" href="produkt.html">KØB NU</a></button>
-            </article>
-
-            <article class="product">
-                <img src="img/pige.jpeg" alt="Product 1">
-                <h2>JUMPSUIT, DAME</h2>
-                <p>575,00 kr.</p>
-                <button><a class="produkt_a" href="produkt.html">KØB NU</a></button>
-            </article>
-
-            <article class="product">
-                <img src="img/puma_fyr.webp" alt="Product 1">
-                <h2>PUMA T-SHIRT, MAND</h2>
-                <p>299,95 kr.</p>
-                <button><a class="produkt_a" href="produkt.html">KØB NU</a></button>
-            </article>
-        </section>
-    </main>
-
+    <h1>PRODUKTER</h1>
+    <section>
+        <h2>The Products</h2>
+        <div class="produkt_container"></div>
+    </section>
+    <script src="javascript.js"></script>
+    <script src="product.js"></script>
 </body>
 
 </html>
+
+<template class="produkt_template">
+    <article class="produkt_article">
+        <a href="produkt.html">
+            <div class="beer_abv_info">
+                <p class="beer_abv">abv:<span class="beer_abv_data"> 5.5%</span></p>
+                <p class="beer_strong hide"> strong</p>
+            </div>
+            <div class="produkt_image_container">
+                <img class="produkt_image" src="img/pige.jpeg" alt="">
+            </div>
+            <h3 class="produkt_name">Gooodbeer</h3>
+            <p class="produkt_tagline">Drink good beer</p>
+            <p class="produkt_price">55kr</p>
+            <button><a class="produkt_a" href="produkt.html">KØB NU</a></button>
+        </a>
+    </article>
+
+</template>
