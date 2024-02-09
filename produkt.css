@@ -1,7 +1,7 @@
 .grid_col1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-left: 10%;
+  padding: 1rem;
 }
 
 .contact {
@@ -71,4 +71,9 @@ p {
 img {
   width: 70%;
   border: solid;
+}
+
+.produkt_underskrift {
+  font-size: 20px;
+  font-weight: 200;
 }

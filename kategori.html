@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="kategori.css">
+    <title>Kategori</title>
     <link rel="stylesheet" href="layout.css">
 </head>
 
-<body>
-    <header>
+<body class="kategori_body">
+    <header id="forside_header">
         <nav>
-            <a href="index.html">FORSIDE</a>
+
             <a href="produktliste.html">TØJ</a>
             <a href="produktliste.html">ACCESSORIES</a>
             <a href="produktliste.html">SKO</a>
@@ -21,34 +20,28 @@
         </nav>
     </header>
     <main>
-        <h1>
-            KATEGORIER
-        </h1>
-        <section id="grid_kategori">
-            <div class="kategori_1">
-                <img src="img/pige.jpeg" alt="pige">
-                <a class="a_produktliste" href="produktliste.html">Tøj</a>
-            </div>
-            <div class="kategori_1">
-                <img src="img/pige.jpeg" alt="pige">
-                <a class="a_produktliste" href="produktliste.html">Accessories</a>
-            </div>
-            <div class="kategori_1">
-                <img src="img/pige.jpeg" alt="pige">
-                <a class="a_produktliste" href="produktliste.html">Sko</a>
-            </div>
-            <div class="kategori_1">
-                <img src="img/pige.jpeg" alt="pige">
-                <a class="a_produktliste" href="produktliste.html">Træningstøj</a>
-            </div>
-            <div class="kategori_1">
-                <img src="img/pige.jpeg" alt="pige">
-                <a class="a_produktliste" href="produktliste.html">Vinter</a>
-            </div>
+        <h1 class="kategori_h1">KATEGORIER</h1>
+        <section>
+
+            <div class="kategori_container"></div>
         </section>
 
     </main>
-
+    <script src="kategori.js"></script>
 </body>
 
+
+
 </html>
+
+<template class="kategori_template">
+    <article class="kategori_article">
+
+        <!-- <div class="kategori_image_container">
+            <img class="kategori_image" src="img/pige.jpeg" alt="">
+        </div> -->
+        <h3 class="kategori_name">Gooodbeer</h3>
+        <a class="kategori_link"></a>
+    </article>
+
+</template>
